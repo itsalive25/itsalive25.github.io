@@ -53,7 +53,7 @@ Finkenau 153 (Altbau)</p>
 <ol start="3">
 <li><a href="#intro">Intro</a></li>
 <li><a href="#kursvorstellung">Kursvorstellung</a></li>
-<li><a href="#aufgaben">Aufgaben</a></li>
+<li><a href="#assignment-01">Assignment-01</a></li>
 <li><a href="#material">Material</a></li>
 <li><a href="#links">Links</a></li>
 <li><a href="#einschreibeaufgabe">Einschreibeaufgabe</a></li>
@@ -163,9 +163,10 @@ Author 	Luigi Galvani</li>
 </section>
 <div class="pagina"> 5 </div>
 <p><a href="#index" class="arrow">▲</a></p>
-<section id="aufgaben">
+<section id="assignment-01">
   <p><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Frankenstein1931CliveKarloffCrop.jpg" alt="Cropped and edited lobby card for Frankenstein, featuring Colin Clive, DwightFrye and Boris Karloff. Image is assumed to be in the public domain as no copyright is in evidence."></p>
-<h2><a href="#aufgaben">Aufgaben</a></h2>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Frankenstein1931CliveKarloffCrop.jpg" alt="Cropped and edited lobby card for Frankenstein, featuring Colin Clive, DwightFrye and Boris Karloff. Image is assumed to be in the public domain as no copyright is in evidence."></p>
+<h2><a href="#assignment-01">Assignment-01</a></h2>
 <ul>
 <li>In der ersten Aufgabe starten wir mit einem Plakat im Format A2.</li>
 </ul>
@@ -177,7 +178,7 @@ Author 	Luigi Galvani</li>
 <ol start="3">
 <li>Lade deine Ergebnisse als pdf <a href="https://drive.google.com/open?id=11zGp1AxggcMfUyyypoFPNFBfRmWKI48X&amp;usp=drive_fs">hier</a> hoch.</li>
 </ol>
-  <div id="pad-content">⏳ Lade Inhalt...</div>
+  <div id="submissions-01" class="pad-content">⏳ Loading Content from Etherpad...</div>
 </section>
 <div class="pagina"> 6 </div>
 <p><a href="#index" class="arrow">▲</a></p>
@@ -252,7 +253,8 @@ Author 	Luigi Galvani</li>
 <div class="pagina"> 8 </div>
 <p><a href="#index" class="arrow">▲</a></p>
 <section id="einschreibeaufgabe">
-  <h2>Einschreibe-Aufgabe:</h2>
+  <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Muscles_of_the_tongue_and_head._Engraving%2C_1686._Wellcome_V0007783EL.jpg/1024px-Muscles_of_the_tongue_and_head._Engraving%2C_1686._Wellcome_V0007783EL.jpg?20141027215240" alt="Muscles of the tongue and head. Engraving, 1686. Iconographic Collections Keywords: Marcello Malpighi; Johannes Vesling; Steven Blankaart; Conrad Victor Schneider; Giulio Cesare Casseri"></p>
+<h2>Einschreibe-Aufgabe:</h2>
 <ul>
 <li>
 <p>Gehe auf den typografischen Friedhof. Was das ist, <em>Marmorinschrift</em> oder <em>Altpapiercontainer</em>, bleibt dir überlassen. Am besten bei Nacht und Gewitter. Grabe aus. Nimm, was du findest und bringe es in dein Labor. Nähe, nagele und tackere die Einzelteile zu etwas Neuem zusammen. Setze alles unter Strom, um deine Kreatur zum Leben zu erwecken.<br>
@@ -288,10 +290,7 @@ Author 	Luigi Galvani</li>
     const markdown = await res.text(); // <-- roher Markdown aus dem Pad!
 
     const html = marked.parse(markdown);
-    document.getElementById("pad-content").innerHTML = html;
-
-    // Optional zum Debuggen
-    // console.log(markdown);
+    document.getElementById("submissions-01").innerHTML = html;
   }
 
   loadPadMarkdown();
