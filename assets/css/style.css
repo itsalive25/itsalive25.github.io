@@ -109,8 +109,12 @@ img{
 	max-width: 43vw;
 	max-height: 100vh;
 /*	margin: 2rem 0 4rem 0;*/
+}
+
+img, p > img{
 	mix-blend-mode: multiply;
 }
+
 
 .pad-content{
 /*	display: grid;*/
@@ -142,6 +146,7 @@ column-count: 2;
 .pad-content > p > img{
 	padding: 5px 0;
 	break-after: column;
+	min-width: 30vw;
 }
 
 
@@ -338,6 +343,56 @@ section{
   	min-height: none;
   }
 }
+
+
+@media only screen and (min-width: 1440px) and (orientation: landscape) {
+
+*{
+	font-size: 28px;
+}
+
+#title {
+	font-size: 2.5vw !important;
+	padding-top: 10vh ;
+}
+
+#title img {
+	margin-top: -10vh;
+}
+
+h1,em {
+	font-size: 4rem !important;
+}
+
+
+#index > ol > :is(li,p,a),
+#index > ol > :is(li,p,a) > :is(li,p,a) > a{
+	font-size: 2rem;
+	text-decoration: none;
+	text-indent: 0;
+	padding-left: 2rem;
+}
+
+#intro > :is(p,a,strong) {
+	column-count: 2;
+}
+
+blockquote{
+	padding-right: 10%;
+}
+img{
+	width: 42vw;
+}
+
+a.arrow, .pagina{
+	font-size: 2rem;
+	margin-top: -50px;
+}
+
+
+}
+
+
 
 @media only screen and (max-width: 900px) and (orientation: landscape) {
 
