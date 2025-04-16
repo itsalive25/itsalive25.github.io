@@ -360,7 +360,7 @@ section{
 	margin-top: -10vh;
 }
 
-h1,em {
+#title :is(h1,em) {
 	font-size: 4rem !important;
 }
 
@@ -373,8 +373,14 @@ h1,em {
 	padding-left: 2rem;
 }
 
-#intro > :is(p,a,strong) {
+#intro > :is(p,a,strong),
+#einschreibeaufgabe :is(p,a,strong) {
 	column-count: 2;
+}
+
+#intro br,
+#einschreibeaufgabe br{
+	column-span: all;
 }
 
 blockquote{
