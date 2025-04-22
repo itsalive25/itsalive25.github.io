@@ -83,8 +83,16 @@ p{
 
 p,li{
 	padding-left: 2rem;
-/*	list-style: none;*/
+	list-style: none;
 }
+
+#material > p,
+#links > p {
+	padding-left: 6rem;
+	text-indent: -2rem;
+}
+
+#
 
 ul {
   list-style-type: none;
@@ -116,7 +124,7 @@ img, p > img{
 }
 
 
-.pad-content{
+.submissions{
 /*	display: grid;*/
 padding-top: 2rem;
 column-count: 2;
@@ -124,8 +132,8 @@ column-count: 2;
 	mix-blend-mode: multiply;
 }
 
-.pad-content > p > img,
-.pad-content > :is(p, h2, h3, h4, h5, h6) {
+.submissions > p > img,
+.submissions > :is(p, h2, h3, h4, h5, h6) {
 	position: relative;
 	display: block;
 	padding: 0;
@@ -133,17 +141,17 @@ column-count: 2;
 	text-indent: 2rem;
 }
 
-.pad-content > :is(h2,h3,h4) {
+.submissions > :is(h2,h3,h4) {
 	column-span: all;
 /*	padding-top: 1rem;*/
 }
 
-.pad-content > h5,p {
+.submissions > h5,p {
 	break-inside: avoid-column;
 }
 
 
-.pad-content > p > img{
+.submissions > p > img{
 	padding: 5px 0;
 	break-after: column;
 	min-width: 30vw;
@@ -218,6 +226,7 @@ a.arrow{
 	padding: 10px;
 	display: inline-block;
 	pointer-events: auto;
+	text-indent: 2rem;
 /*	outline: 2px solid;*/
 /*	background-color: none;*/
 }
@@ -275,7 +284,7 @@ blockquote, blockquote > p{
 	font-size: 18px;
 }
 
-	.pad-content{
+	.submissions{
 		column-count: 1;
 	}
 
@@ -316,7 +325,8 @@ blockquote, blockquote > p{
 a.arrow{
 	font-size: .9rem;
 	padding: 10px;
-	margin: -18px -10px -55px -10px;
+
+/*	margin: -18px -10px -55px -10px;*/
 }
 
 	#title > p > img, .gutter {
@@ -345,10 +355,10 @@ section{
 }
 
 
-@media only screen and (min-width: 1440px) and (orientation: landscape) {
+@media only screen and (min-width: 1450px) and (orientation: landscape) {
 
 *{
-	font-size: 28px;
+	font-size: 24px;
 }
 
 #title {
@@ -388,6 +398,7 @@ blockquote{
 }
 img{
 	width: 42vw;
+	max-height: unset;
 }
 
 a.arrow, .pagina{
@@ -440,13 +451,13 @@ a.arrow, .pagina{
 		margin: -1rem 0rem;
 	}
 
-.pad-content, .pad-content > :is(h2,h3,h4,p,img){
+.submissions, .submissions > :is(h2,h3,h4,p,img){
 		padding: 0 !important;
 		margin: 0;
 		text-indent: 0;
 		column-gap: 10vw;
 	}
-	.pad-content > p > img {
+	.submissions > p > img {
 		position: static;
 	}
 
