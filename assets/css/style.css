@@ -87,8 +87,9 @@ p,li{
 }
 
 #material > p,
-#links > p {
-	padding-left: 6rem;
+#links > p,
+.aufgaben > p {
+	padding-left: 4rem;
 	text-indent: -2rem;
 }
 
