@@ -4,7 +4,8 @@ const markdownIt = require("markdown-it");
 
 module.exports = function(eleventyConfig) {
   // Passthroughs
-  eleventyConfig.addPassthroughCopy("**/*.js");
+  eleventyConfig.addPassthroughCopy("**/**/*.js");
+  // eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("**/*.png");
   eleventyConfig.addPassthroughCopy("**/*.css");
   eleventyConfig.addPassthroughCopy("**/*.woff");

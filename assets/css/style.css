@@ -165,7 +165,7 @@ column-count: 2;
 }
 
 .submissions > p > img,
-.protokolle > p > img,
+.protokolle img,
 .submissions > :is(p, h2, h3, h4, h5, h6){
 	position: relative;
 /*	display: block;*/
