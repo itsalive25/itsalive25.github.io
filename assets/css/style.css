@@ -68,9 +68,28 @@ section{
   box-shadow: 0px 0 27px 0 black;
 }
 
-h1,h2,h3,h4,h5,h6,p,li, hr{
+h1,h2,h3,h4,h5,h6,p,ul,hr,ol{
 	margin-left: 50vw;
 	padding: 0 2rem 0rem 2rem;
+}
+
+h5{
+	padding-top: .5rem;
+
+}
+
+ul ul{
+	margin-left: 0;
+}
+
+li{
+	list-style: inside;
+	padding-left: 3rem;
+  text-indent: -.95rem;
+}
+
+li::marker{
+	
 }
 
 p{
@@ -81,22 +100,27 @@ p{
 }
 
 
-p,li{
+p{
 	padding-left: 2rem;
-	list-style: none;
+/*	list-style: none;*/
 }
 
 #material > p,
 #links > p,
 .aufgaben > p {
-	padding-left: 4rem;
+	padding-left: 6rem;
 	text-indent: -2rem;
 }
 
-#
+hr{
+	color: black;
+	border-width: .5px;
+	border-style: solid;
+	margin: 10px 2vw 10px 52vw;
+}
 
 ul {
-  list-style-type: none;
+/*  list-style-type: none;*/
   padding-left: 0; 
 }
 
@@ -125,7 +149,7 @@ img, p > img{
 }
 
 
-.submissions{
+.submissions {
 /*	display: grid;*/
 padding-top: 2rem;
 column-count: 2;
@@ -133,14 +157,31 @@ column-count: 2;
 	mix-blend-mode: multiply;
 }
 
+
+.protokolle .contains-images{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+}
+
 .submissions > p > img,
-.submissions > :is(p, h2, h3, h4, h5, h6) {
+.protokolle > p > img,
+.submissions > :is(p, h2, h3, h4, h5, h6){
 	position: relative;
-	display: block;
+/*	display: block;*/
 	padding: 0;
 	margin: 0;
 	text-indent: 2rem;
 }
+
+/*.protokolle > p > img{
+	margin-left: -50vw;
+	column-count: 2;
+}*/
+
+/*.protokolle > p > img + img{
+	margin-left: 0;
+}*/
 
 .submissions > :is(h2,h3,h4) {
 	column-span: all;
@@ -152,11 +193,14 @@ column-count: 2;
 }
 
 
-.submissions > p > img{
+.submissions > p > img,
+.protokolle > p > img{
 	padding: 5px 0;
 	break-after: column;
-	min-width: 30vw;
+
 }
+
+
 
 
 
@@ -242,9 +286,9 @@ a.arrow{
 
 
 ol {
-/*  list-style: none;  */
+  list-style: none;  
   padding-left: 0;
-  margin-left: 0;
+/*  margin-left: 0;*/
 }
 
 #intro{
@@ -425,7 +469,7 @@ a.arrow, .pagina{
 	h2{
 		font-size: 1.5rem;
 	}
-	h1, h2, h3, h4, h5, h6, p, li, hr{
+	h1, h2, h3, h4, h5, h6, p, hr{
 		margin-left: 48vw;
 		padding: 0 0rem 0 1rem !important;
 	}
