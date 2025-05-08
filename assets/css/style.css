@@ -88,8 +88,10 @@ li{
   text-indent: -.95rem;
 }
 
-li::marker{
-	
+.smalltype{
+	font-size: 1rem;
+	text-indent: 0;
+	font-weight: normal;
 }
 
 p{
@@ -194,7 +196,7 @@ column-count: 2;
 
 
 .submissions > p > img,
-.protokolle > p > img{
+.protokolle img{
 	padding: 5px 0;
 	break-after: column;
 
