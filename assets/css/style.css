@@ -264,8 +264,9 @@ h4{
 }
 
 a.arrow{
-	position: absolute;
+	position: fixed;
 	margin: -.35rem 0 0 0;
+	top: 0;
 	left: 0;
 	z-index: 9999;
 	text-decoration: none;
