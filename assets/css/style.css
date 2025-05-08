@@ -83,9 +83,18 @@ ul ul{
 }
 
 li{
-	list-style: inside;
+	list-style: decimal-leading-zero;
+/*	padding-left: 3rem;*/
+/*  text-indent: -.95rem;*/
+}
+
+ul{
+	margin-left: 50vw;
 	padding-left: 3rem;
-  text-indent: -.95rem;
+}
+
+ul li{
+	list-style: disc;
 }
 
 .smalltype{
@@ -121,10 +130,6 @@ hr{
 	margin: 10px 2vw 10px 52vw;
 }
 
-ul {
-/*  list-style-type: none;*/
-  padding-left: 0; 
-}
 
 ol {
   list-style-type: decimal; 
@@ -207,7 +212,9 @@ column-count: 2;
 
 
 
-
+code{
+	font-family: Courier New, monospace;
+}
 
 strong{
 	font-weight: normal;
@@ -289,9 +296,8 @@ a.arrow{
 
 
 ol {
-  list-style: none;  
-  padding-left: 0;
-/*  margin-left: 0;*/
+  list-style: outside;  
+  padding-left: 4rem;
 }
 
 #intro{
