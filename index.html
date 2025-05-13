@@ -74,6 +74,9 @@ Finkenau 153 &amp; 142 (Altbau)</p>
 <p><a href="#aufgaben">Aufgaben</a></p>
 </li>
 <li>
+<p><a href="#abgaben">Abgaben</a></p>
+</li>
+<li>
 <p><a href="#protokolle">Protokolle</a></p>
 </li>
 </ol>
@@ -171,6 +174,13 @@ Die Ergebnisse dürfen überraschend bis erschütternd sein. Anders als der ungl
 </section>
 <div class="pagina">7</div>
 <p><a href="#index" class="arrow">▲</a></p>
+<section id="abgaben" class="abgaben">
+ <!-- ![Men working at a printing press, proofing copy, inking, and setting type. Wood engraving after a woodcut by Stradanus, c.1580.](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Men_working_at_a_printing_press%2C_proofing_copy%2C_inking%2C_and_Wellcome_V0023786.jpg/1599px-Men_working_at_a_printing_press%2C_proofing_copy%2C_inking%2C_and_Wellcome_V0023786.jpg?20141102161950) -->
+<h2><a href="#abgaben">Abgaben</a></h2>
+<div id="submissions-pad" class="submissions pad-content minutes">⏳ Loading Content from Etherpad...</div>
+</section>
+<div class="pagina">8</div>
+<p><a href="#index" class="arrow">▲</a></p>
 <section id="protokolle" class="protokolle">
  <h2><a href="#protokolle">Protokolle</a></h2>
 <div id="minutes-pad" class="minutes pad-content">⏳ Loading Content from Etherpad...</div>
@@ -241,6 +251,9 @@ Die Ergebnisse dürfen überraschend bis erschütternd sein. Anders als der ungl
     // await delay(100);
 
     await loadPad("minutes-pad", "https://pad.piratenpartei.at/p/ITSA-minutes/export/txt");
+    await delay(100);
+
+    await loadPad("submissions-pad", "https://pad.piratenpartei.at/p/ITSA-submissions/export/txt");
     await delay(100);
 
     

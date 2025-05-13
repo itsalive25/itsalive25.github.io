@@ -167,8 +167,7 @@ img, p > img{
 
 
 .submissions {
-/*	display: grid;*/
-padding-top: 2rem;
+/*padding-top: 2rem;*/
 column-count: 2;
 	max-width: 100vw;
 	mix-blend-mode: multiply;
@@ -190,6 +189,13 @@ column-count: 2;
 	padding: 0;
 	margin: 0;
 	text-indent: 2rem;
+}
+.submissions > p > a,
+.submissions h3 {
+	display: block;
+	margin: -0rem 0 1rem 50vw;
+/*	padding-left: 2rem;*/
+	width: 50vw;
 }
 
 /*.protokolle > p > img{
@@ -215,7 +221,6 @@ column-count: 2;
 .protokolle img{
 	padding: 5px 0;
 	break-after: column;
-
 }
 
 
