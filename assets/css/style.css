@@ -198,6 +198,10 @@ column-count: 2;
 	width: 50vw;
 }
 
+.submissions hr {
+	margin: 0px -49vw 22px 52vw;
+}
+
 /*.protokolle > p > img{
 	margin-left: -50vw;
 	column-count: 2;
@@ -470,8 +474,8 @@ blockquote{
 	padding-right: 10%;
 }
 img{
-	width: 42vw;
-	max-height: unset;
+	max-width: 42vw;
+/*	max-height: 90vh;*/
 }
 
 a.arrow, .pagina{
