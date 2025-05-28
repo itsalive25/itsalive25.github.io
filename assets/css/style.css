@@ -535,6 +535,13 @@ a.arrow, .pagina{
 
 *	{
 		font-size: 18px;
+/*		max-height: 100vh;*/
+
+
+	}
+	body{
+/*		height: 100vh;*/
+
 	}
 
 	h1, h1 > em{
@@ -546,11 +553,11 @@ a.arrow, .pagina{
 	}
 	h1, h2, h3, h4, h5, h6, p, hr{
 		margin-left: 48vw;
-		padding: 0 0rem 0 1rem !important;
+/*		padding: 0 0rem 0 1rem !important;*/
 	}
 
 	p{
-		text-indent: 1rem;
+		padding-left: 4rem !important;
 	}
 
 	blockquote, blockquote > p{
@@ -564,13 +571,16 @@ a.arrow, .pagina{
 	p,strong{
 		line-height: 1.2em;
 	}
-
+ol{
+	margin-left: 50vw;
+	padding-left: 2.5rem;
+}
 
 
 
 
 	a.arrow{
-		margin: -2rem 0 0 0;
+/*		margin: -2rem 0 0 0;*/
 	}
 	.pagina{
 		margin: -1rem 0rem;
@@ -588,6 +598,8 @@ a.arrow, .pagina{
 
   .gutter {
     display: flex; /* Gutter anzeigen (sofern du es so definiert hast) */
+    position: fixed;
+    height: 100%;
   }
 }
 
