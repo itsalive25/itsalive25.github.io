@@ -19,6 +19,7 @@
   background-color: none;
   word-spacing: -1px;
   max-width: 100vw;
+  mix-blend-mode: multiply;
 
 
 }
@@ -129,7 +130,7 @@ p{
 #links > p,
 .aufgaben > p,
 .minutes p {
-	padding-left: 6rem;
+	padding-left: 5.85rem;
 	text-indent: -2rem;
 }
 
@@ -355,10 +356,13 @@ blockquote, blockquote > p{
 	height: 50vh;
 }
 
+/*----------PHONES----------*/
+
 @media only screen and (max-width: 600px) and (orientation: portrait) {
 
 *{
 	font-size: 18px;
+	padding-right: .05rem;
 }
 
 	.submissions{
@@ -391,13 +395,49 @@ img{
         height: auto;
         max-height: none;
         max-width: 90vw;
-        margin-left: -1rem;
+        margin-left: -4rem;
+        text-indent: 0;
+}
+
+
+#index img,
+#intro img{
+	margin-left: -1rem;
+}
+#title img{
+	margin-left: 0rem;
+
 }
 
 blockquote, blockquote > p{
 	text-indent: -1rem;
 	padding: 0 0rem 0rem 0.5rem;
 }
+
+#index ol > li, ol{
+		margin-left: 0;
+/*		padding: 0;*/
+	}
+
+	#assignment-01 :is(ol),
+	#abgaben :is(h3,li,ol,hr){
+		padding-left: .5rem;
+		margin: 0 0 0 1rem;
+		width: 100%;
+		display: inline-block;
+	}
+
+	li{
+		padding-left: .5rem;
+	}
+	#assignment-01 p,
+	#protokolle p,
+	ul{
+		margin-left: 1.5rem;
+		padding-left: .5rem;
+		padding-right: 0;
+	}
+
 
 a.arrow{
 	font-size: .9rem;
@@ -415,7 +455,7 @@ a.arrow{
 
   .pagina{
   	right: 1rem;
-  	margin-top: -5px;
+  	margin-top: -1rem;
   }
 
 
@@ -429,6 +469,9 @@ section{
   .blankpage{
   	min-height: none;
   }
+
+
+
 }
 
 
@@ -521,6 +564,10 @@ a.arrow, .pagina{
 	p,strong{
 		line-height: 1.2em;
 	}
+
+
+
+
 
 	a.arrow{
 		margin: -2rem 0 0 0;
