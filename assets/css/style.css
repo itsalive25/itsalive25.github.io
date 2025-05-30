@@ -115,14 +115,10 @@ ul li{
 
 p{
 /*	position: relative;*/
-	text-indent: 2rem;
 	pointer-events: auto;
 	z-index: 10;
-}
-
-
-p{
-	padding-left: 2rem;
+	padding-left: 5.85rem;
+	text-indent: -2rem;
 /*	list-style: none;*/
 }
 
