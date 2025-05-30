@@ -20,7 +20,7 @@
   word-spacing: -1px;
   max-width: 100vw;
   mix-blend-mode: multiply;
-  overflow-x: hidden;
+/*  overflow-x: hidden;*/
 
 }
 
@@ -193,6 +193,7 @@ column-count: 2;
 	padding: 0;
 	margin: 0;
 	text-indent: 2rem;
+	width: 100vw;
 }
 .submissions > p > a,
 .submissions h3 {
