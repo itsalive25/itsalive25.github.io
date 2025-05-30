@@ -20,7 +20,7 @@
   word-spacing: -1px;
   max-width: 100vw;
   mix-blend-mode: multiply;
-
+  overflow-x: hidden;
 
 }
 
@@ -129,7 +129,8 @@ p{
 #material > p,
 #links > p,
 .aufgaben > p,
-.minutes p {
+.minutes p,
+	.submissions > p,{
 	padding-left: 5.85rem;
 	text-indent: -2rem;
 }
@@ -140,6 +141,8 @@ hr{
 	border-style: solid;
 	margin: 20px 2vw 10px 52vw;
 }
+
+
 
 
 ol {
@@ -200,7 +203,8 @@ column-count: 2;
 }
 
 .submissions hr {
-	margin: 0px -49vw 22px 52vw;
+	margin: 0px -50vw 22px 1.5vw;
+	width: 46vw;
 }
 
 /*.protokolle > p > img{
@@ -463,6 +467,7 @@ a.arrow{
 section{
 	min-height: unset;
 	padding: .5rem 1rem 4rem 1rem;
+	width: 100%;
 }
 
   .halfpage, 
