@@ -127,7 +127,7 @@ p{
 .aufgaben > p,
 .minutes p,
 	.submissions > p,{
-	padding-left: 5.85rem;
+	padding-left: 5.85rem !important;
 	text-indent: -2rem;
 }
 
@@ -185,12 +185,17 @@ column-count: 2;
 .protokolle img,
 .submissions > :is(p, h2, h3, h4, h5, h6){
 	position: relative;
-/*	display: block;*/
+	display: block;
 	padding: 0;
 	margin: 0;
 	text-indent: 2rem;
-	width: 100vw;
+	
 }
+.submissions > p{
+/*	width: 100vw;*/
+/*	display: block;*/
+}
+
 .submissions > p > a,
 .submissions h3 {
 	display: block;
