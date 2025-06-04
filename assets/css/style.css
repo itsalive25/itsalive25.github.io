@@ -174,7 +174,8 @@ column-count: 2;
 }
 
 
-.protokolle .contains-images{
+.protokolle .contains-images,
+.contains-images{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin: 0;
@@ -219,7 +220,7 @@ column-count: 2;
 }*/
 
 .submissions > :is(h2,h3,h4) {
-	column-span: all;
+/*	column-span: all;*/
 /*	padding-top: 1rem;*/
 }
 
@@ -371,9 +372,9 @@ blockquote, blockquote > p{
 	padding-right: .05rem;
 }
 
-	.submissions{
+/*	.submissions{
 		column-count: 1;
-	}
+	}*/
 
 	h1,h2,h3,h4,h5,h6,p,li, hr{
 	margin: 0;
@@ -388,7 +389,9 @@ h2{
 	padding: 0;
 }
 
-
+.contains-images{
+	grid-template-columns: 1fr !important;
+}
 
 p{
 	text-indent: 1rem;
