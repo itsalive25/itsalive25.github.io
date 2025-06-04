@@ -1,6 +1,6 @@
 
 (function() {
-  const selector = '#minutes-pad';
+  const selector = ['#minutes-pad','#submissions-pad'];
 
   // Utility: sucht alle <p> und fügt contains-images hinzu, wenn sie ein <img> haben
   function markImages(root) {
