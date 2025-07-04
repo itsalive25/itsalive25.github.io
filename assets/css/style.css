@@ -292,10 +292,13 @@ h3,h4{
 
 h4{
 	text-shadow: -.1px -.1px 0 #000, .1px -.1px 0 #000, -.1px .1px 0 #000, .1px .1px 0 #000;
-
 	text-transform: none;
 	padding-top: .5rem;
+	padding-left: 3.75rem;
+	font-weight: normal;
+	text-transform: uppercase;
 }
+
 
 h5{
 	font-weight: bolder;
